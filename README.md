@@ -2,6 +2,10 @@
 
 MovieSwipe is a production-style static frontend for rating movies with Tinder-like swipe interactions.
 
+## Live Demo
+
+- Website: [https://aviavi16.github.io/MovieSwipe/](https://aviavi16.github.io/MovieSwipe/)
+
 ## Showcase
 
 ![MovieSwipe screenshot](public/movieswipe-home.png)
