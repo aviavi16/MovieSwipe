@@ -9,7 +9,7 @@ import { SwipeChart } from '@/components/stats/SwipeChart';
 import { SwipeHistoryList } from '@/components/stats/SwipeHistoryList';
 import { useMovieQueue } from '@/hooks/useMovieQueue';
 
-export function StatisticsPage(): JSX.Element {
+export function StatisticsPage() {
   const queue = useMovieQueue();
   const movieLookup = useMemo(() => new Map(queue.movies.map((movie) => [movie.id, movie])), [queue.movies]);
 

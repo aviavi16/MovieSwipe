@@ -8,7 +8,7 @@ interface SwipeHistoryListProps {
   lookup: Map<string, { title: string; year: number }>;
 }
 
-export function SwipeHistoryList({ items, lookup }: SwipeHistoryListProps): JSX.Element {
+export function SwipeHistoryList({ items, lookup }: SwipeHistoryListProps) {
   return (
     <GlassPanel className="space-y-4 p-5">
       <div>

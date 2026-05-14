@@ -34,7 +34,7 @@ export function Button({
   children,
   type = 'button',
   ...props
-}: ButtonProps): JSX.Element {
+}: ButtonProps) {
   return (
     <button
       type={type}

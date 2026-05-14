@@ -8,7 +8,7 @@ import { MovieGridCard } from '@/components/movie/MovieGridCard';
 import { useMovieQueue } from '@/hooks/useMovieQueue';
 import { Button } from '@/components/ui/Button';
 
-export function DislikedPage(): JSX.Element {
+export function DislikedPage() {
   const queue = useMovieQueue();
   const navigate = useNavigate();
 

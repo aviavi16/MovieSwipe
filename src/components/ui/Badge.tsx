@@ -1,7 +1,7 @@
 import type { HTMLAttributes } from 'react';
 import { twMerge } from '@/lib/twMerge';
 
-export function Badge({ className, ...props }: HTMLAttributes<HTMLSpanElement>): JSX.Element {
+export function Badge({ className, ...props }: HTMLAttributes<HTMLSpanElement>) {
   return (
     <span
       className={twMerge(

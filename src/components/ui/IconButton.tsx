@@ -6,7 +6,7 @@ interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-export function IconButton({ className, icon, label, type = 'button', ...props }: IconButtonProps): JSX.Element {
+export function IconButton({ className, icon, label, type = 'button', ...props }: IconButtonProps) {
   return (
     <button
       type={type}

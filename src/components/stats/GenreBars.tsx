@@ -6,7 +6,7 @@ interface GenreBarsProps {
   data: GenreStat[];
 }
 
-export function GenreBars({ data }: GenreBarsProps): JSX.Element {
+export function GenreBars({ data }: GenreBarsProps) {
   const max = Math.max(...data.map((entry) => entry.count), 1);
 
   return (

@@ -4,7 +4,7 @@ interface RatioRingProps {
   value: number;
 }
 
-export function RatioRing({ value }: RatioRingProps): JSX.Element {
+export function RatioRing({ value }: RatioRingProps) {
   const reducedMotion = useReducedMotion();
   const normalized = Math.max(0, Math.min(100, value));
   const circumference = 2 * Math.PI * 54;

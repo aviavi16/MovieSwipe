@@ -10,7 +10,7 @@ import { useMovieQueue } from '@/hooks/useMovieQueue';
 import { useMovieStore } from '@/store/movieStore';
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts';
 
-export function SwipePage(): JSX.Element {
+export function SwipePage() {
   const queue = useMovieQueue();
   const rateMovie = useMovieStore((state) => state.rateMovie);
   const undoLastSwipe = useMovieStore((state) => state.undoLastSwipe);

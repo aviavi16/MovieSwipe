@@ -10,7 +10,7 @@ interface MovieGridCardProps {
   ratedAt: string;
 }
 
-export function MovieGridCard({ movie, decision, ratedAt }: MovieGridCardProps): JSX.Element {
+export function MovieGridCard({ movie, decision, ratedAt }: MovieGridCardProps) {
   const accentClass =
     decision === 'disliked'
       ? 'border-danger-400/20 bg-danger-500/15 text-danger-100'

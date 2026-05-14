@@ -16,7 +16,7 @@ export function EmptyState({
   actionLabel,
   onAction,
   icon
-}: EmptyStateProps): JSX.Element {
+}: EmptyStateProps) {
   return (
     <GlassPanel className="flex flex-col items-center gap-4 px-6 py-10 text-center">
       {icon ? <div className="text-4xl text-accent-300">{icon}</div> : null}

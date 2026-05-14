@@ -4,7 +4,7 @@ interface SectionHeadingProps {
   eyebrow?: string;
 }
 
-export function SectionHeading({ title, description, eyebrow }: SectionHeadingProps): JSX.Element {
+export function SectionHeading({ title, description, eyebrow }: SectionHeadingProps) {
   return (
     <div className="space-y-2">
       {eyebrow ? <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-300">{eyebrow}</p> : null}

@@ -11,7 +11,7 @@ interface StatCardProps {
   accent?: string;
 }
 
-export function StatCard({ label, value, suffix, hint, icon, accent }: StatCardProps): JSX.Element {
+export function StatCard({ label, value, suffix, hint, icon, accent }: StatCardProps) {
   return (
     <GlassPanel className="relative overflow-hidden p-5">
       <div className="flex items-start justify-between gap-4">

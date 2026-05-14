@@ -15,7 +15,7 @@ const navItems = [
   { to: '/about', label: 'About', icon: FaCircleInfo }
 ];
 
-export function AppShell({ children }: AppShellProps): JSX.Element {
+export function AppShell({ children }: AppShellProps) {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-aurora-radial text-white">
       <div className="absolute inset-0 -z-10">
@@ -60,7 +60,7 @@ interface ShellNavLinkProps {
   mobile?: boolean;
 }
 
-function ShellNavLink({ to, label, icon: Icon, mobile = false }: ShellNavLinkProps): JSX.Element {
+function ShellNavLink({ to, label, icon: Icon, mobile = false }: ShellNavLinkProps) {
   return (
     <NavLink
       to={to}

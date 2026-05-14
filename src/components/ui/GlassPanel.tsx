@@ -1,7 +1,7 @@
 import type { HTMLAttributes } from 'react';
 import { twMerge } from '@/lib/twMerge';
 
-export function GlassPanel({ className, ...props }: HTMLAttributes<HTMLDivElement>): JSX.Element {
+export function GlassPanel({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       className={twMerge(

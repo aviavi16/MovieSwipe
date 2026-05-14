@@ -11,7 +11,7 @@ interface MovieCardProps {
   className?: string;
 }
 
-export function MovieCard({ movie, onSwipe, className }: MovieCardProps): JSX.Element {
+export function MovieCard({ movie, onSwipe, className }: MovieCardProps) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotate = useTransform(x, [-220, 220], [-18, 18]);

@@ -20,7 +20,7 @@ export function MovieFilters({
   onGenreChange,
   onShuffle,
   onClear
-}: MovieFiltersProps): JSX.Element {
+}: MovieFiltersProps) {
   return (
     <GlassPanel className="p-4">
       <div className="grid gap-3 lg:grid-cols-[minmax(0,1.2fr)_minmax(180px,0.4fr)_auto_auto] lg:items-center">

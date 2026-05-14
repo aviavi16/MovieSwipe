@@ -1,7 +1,7 @@
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { Skeleton } from '@/components/ui/Skeleton';
 
-export function LoadingScreen(): JSX.Element {
+export function LoadingScreen() {
   return (
     <div className="grid min-h-[70vh] place-items-center">
       <GlassPanel className="w-full max-w-3xl p-6">

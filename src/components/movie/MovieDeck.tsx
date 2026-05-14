@@ -13,7 +13,7 @@ interface MovieDeckProps {
   onShuffle: () => void;
 }
 
-export function MovieDeck({ currentMovie, nextMovies, onSwipe, onShuffle }: MovieDeckProps): JSX.Element {
+export function MovieDeck({ currentMovie, nextMovies, onSwipe, onShuffle }: MovieDeckProps) {
   const [pendingDecision, setPendingDecision] = useState<SwipeDecision | null>(null);
 
   useEffect(() => {

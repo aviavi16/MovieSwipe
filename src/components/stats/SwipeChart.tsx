@@ -5,7 +5,7 @@ interface SwipeChartProps {
   data: Array<{ label: string; count: number }>;
 }
 
-export function SwipeChart({ data }: SwipeChartProps): JSX.Element {
+export function SwipeChart({ data }: SwipeChartProps) {
   const max = Math.max(...data.map((entry) => entry.count), 1);
 
   return (

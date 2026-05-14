@@ -6,7 +6,7 @@ interface AnimatedCounterProps {
   className?: string;
 }
 
-export function AnimatedCounter({ value, className }: AnimatedCounterProps): JSX.Element {
+export function AnimatedCounter({ value, className }: AnimatedCounterProps) {
   const spring = useSpring(0, { stiffness: 120, damping: 18 });
   const [display, setDisplay] = useState(0);
 

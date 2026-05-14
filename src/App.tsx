@@ -11,7 +11,7 @@ import { FavoritesPage } from '@/pages/FavoritesPage';
 import { DislikedPage } from '@/pages/DislikedPage';
 import { AboutPage } from '@/pages/AboutPage';
 
-export function App(): JSX.Element {
+export function App() {
   const location = useLocation();
   const hydrated = useMovieStore((state) => state.hydrated);
   const setLibrary = useMovieStore((state) => state.setLibrary);

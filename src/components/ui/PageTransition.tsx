@@ -5,7 +5,7 @@ interface PageTransitionProps {
   children: ReactNode;
 }
 
-export function PageTransition({ children }: PageTransitionProps): JSX.Element {
+export function PageTransition({ children }: PageTransitionProps) {
   const reduceMotion = useReducedMotion();
 
   if (reduceMotion) {

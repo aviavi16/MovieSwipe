@@ -11,7 +11,7 @@ const architectureItems = [
   'A service boundary that currently loads a local mock dataset and can later switch to TMDB.'
 ];
 
-export function AboutPage(): JSX.Element {
+export function AboutPage() {
   return (
     <PageTransition>
       <div className="space-y-6">
