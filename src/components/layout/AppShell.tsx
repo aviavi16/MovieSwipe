@@ -8,9 +8,12 @@ import {
   FaChartColumn,
   FaThumbsDown,
   FaGithub,
-  FaLinkedin
+  FaLinkedin,
+  FaBug
 } from 'react-icons/fa6';
+import { useState } from 'react';
 import { twMerge } from '@/lib/twMerge';
+import { BugReportDialog } from '@/components/layout/BugReportDialog';
 
 interface AppShellProps {
   children: ReactNode;
@@ -25,6 +28,8 @@ const navItems = [
 ];
 
 export function AppShell({ children }: AppShellProps) {
+  const [bugReportOpen, setBugReportOpen] = useState(false);
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-aurora-radial text-white">
       <div className="absolute inset-0 -z-10">
@@ -73,26 +78,26 @@ export function AppShell({ children }: AppShellProps) {
               OpenAI Codex
             </a>
             .
-            <span className="block mt-2 text-xs text-white/40">
-              Found a bug? Contact me at{' '}
-              <a
-                href="mailto:eranis54321@gmail.com"
-                className="font-medium text-white transition hover:text-accent-300"
-              >
-                eranis54321@gmail.com
-              </a>
-            </span>
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <SocialLink href="https://github.com/aviavi16" label="GitHub" icon={FaGithub} />
             <SocialLink
               href="https://www.linkedin.com/in/avinoam-ashkenazy-35396941/"
               label="LinkedIn"
               icon={FaLinkedin}
             />
+            <button
+              type="button"
+              onClick={() => setBugReportOpen(true)}
+              className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-white/70 transition hover:border-white/20 hover:bg-white/10 hover:text-white"
+            >
+              <FaBug className="text-sm" />
+              Found a bug?
+            </button>
           </div>
         </div>
       </footer>
+      <BugReportDialog isOpen={bugReportOpen} onClose={() => setBugReportOpen(false)} />
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-white/8 bg-ink/85 px-3 py-3 backdrop-blur-2xl lg:hidden">
         <div className="mx-auto grid max-w-7xl grid-cols-5 gap-2">
           {navItems.map((item) => (
