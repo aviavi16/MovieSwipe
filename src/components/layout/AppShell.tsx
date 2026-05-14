@@ -73,6 +73,15 @@ export function AppShell({ children }: AppShellProps) {
               OpenAI Codex
             </a>
             .
+            <span className="block mt-2 text-xs text-white/40">
+              Found a bug? Contact me at{' '}
+              <a
+                href="mailto:eranis54321@gmail.com"
+                className="font-medium text-white transition hover:text-accent-300"
+              >
+                eranis54321@gmail.com
+              </a>
+            </span>
           </p>
           <div className="flex items-center gap-3">
             <SocialLink href="https://github.com/aviavi16" label="GitHub" icon={FaGithub} />
