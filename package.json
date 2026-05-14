@@ -24,6 +24,7 @@
     "@eslint/js": "^9.9.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@types/node": "^22.13.10",
     "@typescript-eslint/eslint-plugin": "^8.8.0",
     "@typescript-eslint/parser": "^8.8.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -39,5 +40,6 @@
     "tailwindcss": "^3.4.10",
     "typescript": "^5.6.3",
     "vite": "^5.4.8"
-  }
+  },
+  "packageManager": "npm@11.14.1+sha512.6a8a4d67478497a2dbc6815cad72e64c43f33413717e242756047d466241ab39bee61e691683a64658e94496ec5f1a1c05e4a5ec62dcc773280dfd949443a367"
 }
