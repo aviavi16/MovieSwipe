@@ -76,7 +76,11 @@ export function AppShell({ children }: AppShellProps) {
           </p>
           <div className="flex items-center gap-3">
             <SocialLink href="https://github.com/aviavi16" label="GitHub" icon={FaGithub} />
-            <SocialLink href="https://www.linkedin.com/in/aashkenazy" label="LinkedIn" icon={FaLinkedin} />
+            <SocialLink
+              href="https://www.linkedin.com/in/avinoam-ashkenazy-35396941/"
+              label="LinkedIn"
+              icon={FaLinkedin}
+            />
           </div>
         </div>
       </footer>
