@@ -2,6 +2,12 @@
 
 MovieSwipe is a production-style static frontend for rating movies with Tinder-like swipe interactions.
 
+## Showcase
+
+![MovieSwipe screenshot](public/movieswipe-home.png)
+
+![MovieSwipe demo gif](public/movieswipe-demo.gif)
+
 ## Stack
 
 - React
